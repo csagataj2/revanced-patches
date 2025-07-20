@@ -5,6 +5,9 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import app.revanced.patcher.fingerprint
 
 internal val isEmulatorSyncFingerprint = fingerprint {
-    returns("Z;")
-    custom { method, _ -> method.name == "isEmulatorSync" }
+    accessFlags(AccessFlags.PUBLIC)
+    returns("Z")
+    parameters()
+    custom { _, classDef -> classDef.contains("RNDeviceModule") }
+    
 }
