@@ -6,5 +6,5 @@ import app.revanced.patcher.fingerprint
 
 internal val isEmulatorSyncFingerprint = fingerprint {
     returns("Z;")
-    custom { (method, classDef) -> method == "isEmulatorSync"}
+    custom { method, _ -> method.name == "isEmulatorSync" }
 }
