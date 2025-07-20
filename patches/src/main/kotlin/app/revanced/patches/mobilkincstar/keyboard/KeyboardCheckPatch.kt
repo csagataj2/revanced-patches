@@ -9,7 +9,7 @@ val KeyboardCheckPatch = bytecodePatch(
     name = "Keyboard Check Patch",
 ) {
     dependsOn(
-        setMinSdkVersion28
+        SetMinSdkVersion28
     )
 
     compatibleWith("hu.dorsum.clavis.kincstar.mobile"("8.3.2-2", "8.3.2-1"))

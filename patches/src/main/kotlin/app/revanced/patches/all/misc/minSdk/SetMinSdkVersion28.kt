@@ -6,7 +6,7 @@ import org.w3c.dom.Element
 import java.util.logging.Logger
 
 @Suppress("unused")
-val setMinSdkVersion28 = resourcePatch(
+val SetMinSdkVersion28 = resourcePatch(
     name = "Set target SDK version 28",
     description = "Changes the target SDK to version 28 (Android 9). ",
     use = false,
