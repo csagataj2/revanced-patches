@@ -8,6 +8,6 @@ internal val isEmulatorSyncFingerprint = fingerprint {
     accessFlags(AccessFlags.PUBLIC)
     returns("Z")
     parameters()
-    custom { _, classDef -> classDef.endsWith("/RNDeviceModule;") }
+    custom { _, classDef -> classDef.contains("RNDeviceModule") }
     
 }
